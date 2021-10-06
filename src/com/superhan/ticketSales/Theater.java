@@ -1,5 +1,12 @@
 package com.superhan.ticketSales;
 
+/**
+ * 역할: 관객이 연극을 볼 극장
+ * 책임: 연극을 볼 관객을 들여보낸다.
+ * 의존관계:
+ *  - 관객
+ *  - 티켓
+ */
 public class Theater {
     private TicketSeller ticketSeller;
 
@@ -17,6 +24,5 @@ public class Theater {
             ticketSeller.getTicketOffice().plusAmount(ticket.getFee());
             audience.getBag().setTicket(ticket);
         }
-
     }
 }
